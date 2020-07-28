@@ -46,6 +46,11 @@ h3 {
     text-transform: uppercase;
 }
 
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
 /*---- HEADER ----*/
 
 .picture {
@@ -202,6 +207,12 @@ h3 {
 .bloc7, .bloc8 {
     margin-top: 30px;
     margin-bottom: 20px;
+}
+
+.name-boss {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 

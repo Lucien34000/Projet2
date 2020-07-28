@@ -27,6 +27,10 @@ h1, h2, h3, p {
 
 h1 {
     text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1em;
 }
 
 h2 {
@@ -46,9 +50,9 @@ h3 {
 
 .picture {
     text-align: center;
-    padding: 50px 0 ;
     background-color: #8A9FD2;
     position: relative;
+    padding: 40px 0px;
 }
 
 .rounded {
@@ -60,21 +64,23 @@ h3 {
 .big-title {
     text-align: center;
     background-color: #fff;
-    padding: 30px 0;
+    padding: 40px 20px;
     position: relative;
 }
 
-.title {
+.title-name {
     color: #0D47A1;
-    font-size: 40px;
-    font-weight: 900;
-    text-transform: uppercase;
+}
+
+.title-surname {
+    font-weight: 400;
 }
 
 .subtitle {
     color: #8A9FD2;
     display: inline-block;
     font-size: 28px;
+    text-transform: none;
     font-weight: 500;
     position: relative;
 }
@@ -82,7 +88,7 @@ h3 {
 .subtitle::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 60px;
     height: 2px;
     background: #0D47A1;
     position: absolute;
@@ -93,6 +99,7 @@ h3 {
 
 .block-left {
     background-color: #8A9FD2;
+    height: auto;
 }
 
 .color-title {
@@ -139,7 +146,11 @@ h3 {
     display: block;
     height: 2px;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 15px;;
+}
+
+.bloc {
+    margin-top: 40px;
 }
 
 .date-place {
@@ -167,59 +178,123 @@ h3 {
 }
 
 
-/*---- About ----*/
-
-
-
-
 /*---- FOOTER ----*/
+
+.block-left-footer {
+    display: flex;
+    background-color: #8A9FD2;
+}
 
 .icone-sport {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
+    padding: 30px 0px;
 }   
 
-.one {
+.icone-loisir {
     width: 80px;
-    margin: 30px 40px;
+    border: #212121 2px solid;
+    padding: 10px 10px;
+    border-radius: 30%;
 }
 
-.bloc7 {
+.bloc7, .bloc8 {
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
 
 @media only screen and (min-width: 800px) {
 
-.container{
-    display: flex;
-    width: 100%;
-    height: auto;
+    .container{
+        display: flex;
+        width: 100%;
+        height: auto;    
+    }
+
+    .picture {
+        flex: none;
+        width: auto;
+        padding: 0px 0px;
+    }
+
+    .big-title {
+        display: flex;
+        position: relative;
+        width: 100%;
+        text-align: left;
+        padding-left: 100px;
+        align-items: flex-end;
+    }
+
+    .point {
+        vertical-align: top;
+    }
+
+    .block-left {
+        flex: none;
+        width: 350px;
+        padding-top: 80px;
+    }
+
+    .block-right {
+        width: 100%;
+    }
+
+    .block-left-footer {
+        width: 350px;
+    }
+
+    .icone-sport {
+        padding-top: 15%;
+    }
+
+    .icone-loisir {
+        width: 100px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .bloc {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .date-place {
+        width: 150px;
+    }
+
+    .date-place .align-date {
+        display: flex;
+    }
+
+    .study {
+        width: 100%;
+        padding: 20px 0px  30px 80px;
+    }
+
+    .block-left, .block-left-footer {
+        width: 450px;
+    }
+
+    .block-right {
+        margin: 0px 80px;
+        padding-top: 50px;
+    }
+
+    .info-block-footer {
+        display: flex;
+        margin: 30px 0px;
+    }
+
+    .bloc7 {
+        margin-right: 40%;
+    }
     
-}
-
-.picture {
-    flex: none;
-    width: 400px;
-}
-
-.big-title {
-    position: relative;
-    width: 100%;
-    text-align: left;
-    padding-left: 100px;
-}
-
-.block-left {
-    flex: none;
-    width: 400px;
-    padding-top: 80px;
-}
-
-.block-right {
-    padding: 0 100px;
-    width: 100%;
-}
-
 }

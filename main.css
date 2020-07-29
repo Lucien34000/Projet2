@@ -46,6 +46,10 @@ a {
     color: #212121;
 }
 
+.long-text {
+    text-align: justify;
+}
+
 /*---- HEADER ----*/
 
 .picture {
@@ -260,13 +264,6 @@ a {
         padding-top: 15%;
     }
 
-    .icone-loisir {
-        width: 100px;
-        height: 100px;
-    }
-
-
-
 }
 
 @media only screen and (min-width: 1000px) {
@@ -278,7 +275,7 @@ a {
     }
 
     .date-place {
-        width: 150px;
+        width: 160px;
     }
 
     .date-place .align-date {
@@ -287,15 +284,15 @@ a {
 
     .study {
         width: 100%;
-        padding: 20px 0px  30px 80px;
+        padding: 20px 30px;
     }
 
     .block-left, .block-left-footer {
-        width: 450px;
+        width: 350px;
     }
 
     .block-right {
-        margin: 0px 80px;
+        padding: 0px 40px;
         padding-top: 50px;
     }
 
@@ -308,4 +305,21 @@ a {
         margin-right: 40%;
     }
     
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .block-left, .block-left-footer {
+        width: 550px;
+    }
+
+    .rounded {
+        max-width: 300px;
+    }
+
+    .icone-loisir {
+        width: 100px;
+        height: 100px;
+    }
+
 }

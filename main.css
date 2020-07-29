@@ -206,6 +206,9 @@ a {
     border-top-right-radius:    20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius:  20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .bloc7, .bloc8 {

@@ -13,8 +13,20 @@ body {
     font-size: 15px;
 }
 
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
 h2 {
+    font-size: 1.7rem;
     font-weight: 500;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 0rem;
 }
 
 p {
@@ -74,6 +86,7 @@ a {
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 5px 5%;
+    margin-bottom: 20px;
 }
 
 .icones {
@@ -86,11 +99,9 @@ a {
     border-radius: 30%;
 }
 
-
-
 .col-left h2 {
     color: #8A9FD2;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     text-align: center;
     background-color: #212121;
@@ -98,8 +109,29 @@ a {
     margin-bottom: 20px;
 }
 
-.block-right {
-    margin: 50px 40px;
+
+/*---- MAIN ----*/
+
+main {
+    padding: 0 5%;
+}
+
+.blue-title {
+    color: #8A9FD2;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 0;
+}
+
+.left {
+    margin-left: 0;
+    width: 50px;
+    height: 2px;
+    border: 0;
+    background-color: #8A9FD2;
 }
 
 .icone {
@@ -123,34 +155,53 @@ a {
     margin-top: 15px;;
 }
 
-.bloc {
-    margin-top: 40px;
+#formation .block-right .bloc {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.block-right .date-place {
+    width: 20%;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .date-place {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    position: relative;
+        width: 20%;
+        display: inline-block;
+        align-items: flex-start;
+        padding-top: 15px;
+    }
+
+.point {
+    width: 20%;
 }
 
-.date-place .point {
-    width: 20px;
-    margin-right: 10px;
-    flex: none;
-}
-
-.info-date-place {
+.block-right .date-place p {
+    width: 90%;
     font-style: italic;
     font-size: 14px;
-    position: relative;
-    display: inline-block;
+    margin-top: 0;
+    padding: 0 10px 0 10px;
 }
 
 .entitled {
     font-style: oblique;
     color: #8A9FD2;
+    font-size: 1.1rem;
 }
 
+.study {
+    width: 80%;
+    padding-left: 20px;
+}
+
+
+.name-boss {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 
 
 
@@ -161,7 +212,7 @@ a {
     }
 
     .point {
-        vertical-align: top;
+        width: 10%;
     }
 
     .bloc {
@@ -171,21 +222,15 @@ a {
     }
 
     .date-place {
-        width: 160px;
+        width: 20%;
+        display: inline-block;
+        align-items: flex-start;
     }
 
     .date-place .align-date {
         display: flex;
-    }
+        
 
-    .study {
-        width: 100%;
-        padding: 20px 30px;
-    }
-
-    .block-right {
-        padding: 0px 40px;
-        padding-top: 50px;
     }
 
     .info-block-footer {

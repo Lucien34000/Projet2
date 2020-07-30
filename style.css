@@ -25,6 +25,11 @@ p {
     margin-inline-end: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
 .container {
     display: inline;
 }
@@ -60,14 +65,28 @@ p {
     text-align: justify;
 }
 
+#loisirs {
+    margin-top: auto;
+}
+
 .icones-loisirs {
-    width: 100px;
-    height: 100px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    padding: ;
+    padding: 5px 5%;
 }
+
+.icones {
+    display: inline-block;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #212121;
+    padding: 10px 10px;
+    border-radius: 30%;
+}
+
+
 
 .col-left h2 {
     color: #8A9FD2;
@@ -79,6 +98,59 @@ p {
     margin-bottom: 20px;
 }
 
+.block-right {
+    margin: 50px 40px;
+}
+
+.icone {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.title-icones {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.title-icones::after {
+    content: '';
+    background-color: #8A9FD2;
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: 15px;;
+}
+
+.bloc {
+    margin-top: 40px;
+}
+
+.date-place {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.date-place .point {
+    width: 20px;
+    margin-right: 10px;
+    flex: none;
+}
+
+.info-date-place {
+    font-style: italic;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+}
+
+.entitled {
+    font-style: oblique;
+    color: #8A9FD2;
+}
+
 
 
 
@@ -86,5 +158,42 @@ p {
     .container {
         display: grid;
         grid-template-columns: 1fr 2fr;
+    }
+
+    .point {
+        vertical-align: top;
+    }
+
+    .bloc {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .date-place {
+        width: 160px;
+    }
+
+    .date-place .align-date {
+        display: flex;
+    }
+
+    .study {
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .block-right {
+        padding: 0px 40px;
+        padding-top: 50px;
+    }
+
+    .info-block-footer {
+        display: flex;
+        margin: 30px 0px;
+    }
+
+    .bloc7 {
+        margin-right: 40%;
     }
 }

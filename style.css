@@ -14,19 +14,22 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: 1.7rem;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: 1.3rem;
     font-weight: 500;
-    line-height: 0rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
 }
 
 p {
@@ -42,22 +45,36 @@ a {
     color: #212121;
 }
 
-.container {
-    display: inline;
-}
+/*---- HEADER ----*/
 
-
-/*---- ASIDE ----*/
-
-.col-left {
+.profil-picture {
     background-color: #8A9FD2;
-    display: flex;
-    flex-flow: column nowrap;
+    padding: 2%;
 }
 
-.aside-content {
-    padding: 0 10%;
+.big-title {
+    margin-left: 10%;
+    padding: 20px 0;
 }
+
+.blue-title {
+    color: #8A9FD2;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 0;
+}
+
+.subtitle-hr {
+    margin-left: 0;
+    width: 50px;
+    height: 2px;
+    border: 0;
+    background-color: #8A9FD2;
+}
+
 
 .avatar  {
     display: block;
@@ -71,6 +88,26 @@ a {
 
 .bordered {
     border: 2px solid #212121;
+}
+
+.no-marge {
+    margin-top: 0;
+}
+
+/*---- ASIDE ----*/
+
+.container {
+    display: inline;
+}
+
+.column {
+    background-color: #8A9FD2;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.aside-content {
+    padding: 0 10%;
 }
 
 .long-text {
@@ -92,14 +129,15 @@ a {
 .icones {
     display: inline-block;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border: 2px solid #212121;
     padding: 10px 10px;
+    margin: 5px 5px;
     border-radius: 30%;
 }
 
-.col-left h2 {
+.column h2 {
     color: #8A9FD2;
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -114,24 +152,6 @@ a {
 
 main {
     padding: 0 5%;
-}
-
-.blue-title {
-    color: #8A9FD2;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 0;
-}
-
-.left {
-    margin-left: 0;
-    width: 50px;
-    height: 2px;
-    border: 0;
-    background-color: #8A9FD2;
 }
 
 .icone {
@@ -155,13 +175,13 @@ main {
     margin-top: 15px;;
 }
 
-#formation .block-right .bloc {
+#formation .core .bloc {
     margin-top: 20px;
     display: flex;
     flex-flow: row nowrap;
 }
 
-.block-right .date-place {
+.core .date-place {
     width: 20%;
     display: flex;
     flex-flow: row nowrap;
@@ -176,12 +196,13 @@ main {
 
 .point {
     width: 20%;
+    padding-top: 5px;
 }
 
-.block-right .date-place p {
+.core .date-place p {
     width: 90%;
     font-style: italic;
-    font-size: 14px;
+    font-size: 0.8rem;
     margin-top: 0;
     padding: 0 10px 0 10px;
 }
@@ -205,10 +226,19 @@ main {
 
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
     .container {
         display: grid;
         grid-template-columns: 1fr 2fr;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .big-title h1 {
+        padding-top: 5%;
     }
 
     .point {
@@ -229,8 +259,6 @@ main {
 
     .date-place .align-date {
         display: flex;
-        
-
     }
 
     .info-block-footer {
@@ -241,4 +269,27 @@ main {
     .bloc7 {
         margin-right: 40%;
     }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        max-width: 1200px;
+        margin: auto;
+        border: lightgrey 1px solid;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .date-place {
+        width: 100px;
+    }
+
+    .icones {
+        width: 70px;
+        height: 70px;
+    }
+
 }

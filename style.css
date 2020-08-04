@@ -175,7 +175,7 @@ main {
     margin-top: 15px;;
 }
 
-#formation .core .bloc {
+#formation .core .informations {
     margin-top: 20px;
     display: flex;
     flex-flow: row nowrap;
@@ -245,7 +245,7 @@ main {
         width: 10%;
     }
 
-    .bloc {
+    .informations {
         display: flex;
         width: 100%;
         height: auto;
@@ -266,7 +266,7 @@ main {
         margin: 30px 0px;
     }
 
-    .bloc7 {
+    .recommandation1 {
         margin-right: 40%;
     }
 }

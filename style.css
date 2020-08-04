@@ -34,10 +34,6 @@ h3 {
 
 p {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 a {
@@ -175,7 +171,7 @@ main {
     margin-top: 15px;;
 }
 
-#formation .core .informations {
+.formation .core .informations {
     margin-top: 20px;
     display: flex;
     flex-flow: row nowrap;
